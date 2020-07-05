@@ -19,12 +19,13 @@
     max-width: 600px;
 
     @include flexbox(stretch, center, column);
-    & > * + * { margin-top: 25px; }
 
     &__row {
       grid-area: form;
 
       @include flexbox(center, center, row);
+
+      &:not(:last-child) { margin-bottom: 25px; }
 
       & label {
         margin-right: 25px;

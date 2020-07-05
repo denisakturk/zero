@@ -147,8 +147,7 @@
     @include flexbox(center, center, row);
 
     margin-bottom: 50px;
-
-    & > * + * { margin-left: 15px; }
+    &__img-item:not(:last-child) { margin-right: 15px; }
   }
 
   &__link {

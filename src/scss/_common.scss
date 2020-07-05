@@ -140,10 +140,13 @@ h6 {
 .green-divider {
   width: 100%;
   height: 2px;
+  margin-bottom: 40px;
   background-color: $green;
 }
 
 .socialauth {
+  margin-bottom: 40px;
+
   &__title {
     margin-bottom: 27px;
     font-size: 20px;
@@ -153,10 +156,7 @@ h6 {
     letter-spacing: 0.4px;
   }
 
-  &-list {
-    @include flexbox(center, center, row);
-    & > * + * { margin-left: 37px; }
-  }
+  &-list { @include flexbox(center, center, row); }
 
   &__item {
     width: 1.625rem;
@@ -168,6 +168,7 @@ h6 {
     &:nth-child(2) { background-image: url(../img/icons/facebook.svg); }
     &:nth-child(3) { background-image: url(../img/icons/twitter.svg); }
     &:last-child { background-image: url(../img/icons/icons8-vk.com.svg); }
+    &:not(:last-child) { margin-right: 37px; }
 
     &:hover,
     &:focus {

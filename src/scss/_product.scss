@@ -3,10 +3,10 @@
 
   &-item {
     @include flexbox(flex-start, flex-start, row);
-    & > * + * { margin-left: 50px; }
 
     &__img {
       position: relative;
+      margin-right: 50px;
       img { max-width: 458px; }
     }
 
@@ -91,16 +91,17 @@
 
   &-list {
     @include flexbox(center, center, column);
-    & > * + * { margin-top: 40px; }
   }
 
   &-item {
     @include flexbox(center, flex-start, row);
-    & > * + * { margin-left: 32px; }
+
+    &:not(:last-child) { margin-bottom: 40px; }
 
     &__img {
-      width: 83px;
+      max-width: 83px;
       height: 83px;
+      margin-right: 32px;
     }
 
     &__author {

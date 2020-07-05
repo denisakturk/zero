@@ -5,8 +5,9 @@
     padding: 0 15px;
 
     @include flexbox(stretch, center, column);
-    & > * + * { margin-top: 40px; }
   }
+
+  &-signin { margin-bottom: 40px; }
 
   &__title {
     margin-bottom: 40px;
@@ -19,11 +20,15 @@
 
   &-form {
     @include flexbox(stretch, flex-start, column);
-    & > * + * { margin-top: 25px; }
-    & input { padding: 15px 30px; }
+
+    &__input {
+      padding: 15px 30px;
+      margin-bottom: 25px;
+    }
 
     &__link {
       display: inline-block;
+      margin-bottom: 25px;
       font-size: 14px;
       font-weight: 400;
       font-variant: small-caps;

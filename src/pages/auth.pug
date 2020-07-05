@@ -13,8 +13,8 @@ html(lang="ru")
             .auth-signin
               h2.section-title.auth__title Вход
               form.auth-form
-                input(type="text" placeholder="E-mail или тел.:")
-                input(type="text" placeholder="Пароль:")
+                input.auth-form__input(type="text" placeholder="E-mail или тел.:")
+                input.auth-form__input(type="text" placeholder="Пароль:")
                 a.link.auth-form__link(href="#forgot-password") Забыли пароль?
                 button.btn_green.auth-form__btn Войти
             include ../includes/socialauth.pug
