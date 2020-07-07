@@ -206,3 +206,40 @@ h6 {
 .rating[data-total-value="5"] .rating__item:nth-child(n + 1) {
   filter: invert(73%) sepia(73%) saturate(3625%) hue-rotate(348deg) brightness(97%) contrast(90%);
 }
+
+.counter {
+  margin-bottom: 20px;
+
+  @include flexbox(stretch, center, row);
+
+  &-item {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @include flexbox(center, center, row);
+
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  &__minus,
+  &__plus {
+    color: white;
+    cursor: pointer;
+    background-color: $green;
+  }
+
+  &__minus {
+    margin-right: 10px;
+
+    &_disabled {
+      cursor: default;
+      background-color: grey;
+    }
+  }
+
+  &__value {
+    margin-right: 10px;
+    text-align: center;
+  }
+}

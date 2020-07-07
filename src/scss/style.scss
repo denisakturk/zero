@@ -68,7 +68,7 @@
   }
 }
 
-.img-item {
+.card {
   position: relative;
   max-width: 360px;
 
@@ -147,7 +147,7 @@
     @include flexbox(center, center, row);
 
     margin-bottom: 50px;
-    &__img-item:not(:last-child) { margin-right: 15px; }
+    &__card:not(:last-child) { margin-right: 15px; }
   }
 
   &__link {

@@ -18,7 +18,7 @@
 
     &__name {
       position: relative;
-      margin-bottom: 37px;
+      margin-bottom: 20px;
       font-size: 1.875rem;
       font-weight: 700;
       font-variant: small-caps;
@@ -40,7 +40,8 @@
       font-size: 1.125rem;
       font-variant: small-caps;
     }
-    &__rating { margin-bottom: 20px; }
+    &__rating { margin-bottom: 15px; }
+    &__dropdowns { margin-bottom: 20px; }
     &__price { margin-bottom: 15px; }
     &__btn { padding: 15px 38px; }
   }
@@ -56,6 +57,7 @@
     color: #393939;
     letter-spacing: 0.32px;
     cursor: pointer;
+    transition: $transition;
 
     &:hover {
       color: white;
